@@ -32,7 +32,7 @@ export download_url=""
 export netty_host=""
 
 function usageCommand() {
-    echo "-u <download_url> -n <netty_host> "
+    echo "-u <download_url> -n <netty_host>"
 }
 export -f usageCommand
 
@@ -76,7 +76,7 @@ function setup() {
         echo "Downloading Ballerina distribution"
         wget -q $download_url -O ballerina_Installer.deb
     fi
-    dpkg -i ballerinaInstaller.deb
+    dpkg -i ballerina_Installer.deb
     echo "$netty_host netty" >>/etc/hosts
 
     # Build Ballerina Files
