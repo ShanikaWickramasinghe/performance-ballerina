@@ -42,7 +42,7 @@ function usageHelp() {
 }
 export -f usageHelp
 
-while getopts "gp:w:o:h:u:n:" opt; do
+while getopts "gp:w:o:hu:n:" opt; do
     case "${opt}" in
     u)
         download_url=${OPTARG}
